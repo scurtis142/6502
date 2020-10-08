@@ -12,3 +12,8 @@ minipro -p AT28C64B -w file-to-write                  Write binary to ROM. NOTE:
 minipro -l                                            List all avaliable ROM chips for programmer
 minipro -k                                            Check programmer communication
 ./6502-assembler -Fbin -dotdir -o hello.bin hello.s   Assemble hello.s to hello.bin binary
+
+
+To use the Makefile:
+make
+make write
