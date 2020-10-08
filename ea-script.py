@@ -24,5 +24,5 @@ rom = code + bytearray([0xea] * (8192 - len(code)))
 rom[0x1ffc] = 0x00
 rom[0x1ffd] = 0xe0
 
-with open("rom.bin", "wb") as out_file:
+with open("rom.hex", "wb") as out_file:
    out_file.write(rom);

@@ -1,17 +1,15 @@
-For compiling and installing the assembler:
+For compiling and installing the assembler (vasm6502_oldstyle):
 
 cd vasm
 make CPU=6502 SYNTAX=oldstyle
-vasm6502_oldstyle is the assembly program
-
 
 
 ./ea-script.py                                        Run python script to make binary
-hexdump -C rom.bin                                    View hexdump contents of binary
+hexdump -C file-to-write                              View hexdump contents of binary
 minipro -p AT28C64B -w file-to-write                  Write binary to ROM. NOTE: The other day this was working on 1 usb port but not the other
 minipro -l                                            List all avaliable ROM chips for programmer
 minipro -k                                            Check programmer communication
-./6502-assembler -Fbin -dotdir -o hello.bin hello.s   Assemble hello.s to hello.bin binary
+./6502-assembler -Fbin -dotdir -o hello.hex hello.s   Assemble hello.s to hello.hex binary
 
 
 To use the Makefile:
