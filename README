@@ -9,7 +9,7 @@ hexdump -C file-to-write                              View hexdump contents of b
 minipro -p AT28C64B -w file-to-write                  Write binary to ROM. NOTE: The other day this was working on 1 usb port but not the other
 minipro -l                                            List all avaliable ROM chips for programmer
 minipro -k                                            Check programmer communication
-./6502-assembler -Fbin -dotdir -o hello.hex hello.s   Assemble hello.s to hello.hex binary
+vasm6502_oldstyle -Fbin -dotdir -o hello.hex hello.s  Assemble hello.s to hello.hex binary
 
 
 To use the Makefile:

@@ -1,5 +1,5 @@
 ;Compile instructions:
-;./6502-assembler -Fbin -dotdir hello.s
+;vasm6502_oldstyle -Fbin -dotdir hello.s
 
 ; $ means hexidecimal
 ; nothing means decimal

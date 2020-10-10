@@ -15,7 +15,7 @@
 #
  
 ROM = AT28C64B
-ASSEMBLER = ./6502-assembler
+ASSEMBLER = vasm6502_oldstyle
 PROGNAME = hello
 OPTIONS = -Fbin -dotdir
  
