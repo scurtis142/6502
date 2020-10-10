@@ -4,7 +4,6 @@ cd vasm
 make CPU=6502 SYNTAX=oldstyle
 
 
-./ea-script.py                                        Run python script to make binary
 hexdump -C file-to-write                              View hexdump contents of binary
 minipro -p AT28C64B -w file-to-write                  Write binary to ROM. NOTE: The other day this was working on 1 usb port but not the other
 minipro -l                                            List all avaliable ROM chips for programmer
