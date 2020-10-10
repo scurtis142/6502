@@ -22,11 +22,14 @@ OPTIONS = -Fbin -dotdir
 $(PROGNAME).hex: $(PROGNAME).s
 	$(ASSEMBLER) $(OPTIONS) -o $(PROGNAME).hex $(PROGNAME).s
     
+.PHONY: write
 write:
 	minipro -p $(ROM) -w $(PROGNAME).hex
        
+.PHONY: showhex
 showhex:
 	hexdump -C $(PROGNAME).hex
           
+.PHONY: clean
 clean:
 	rm $(PROGNAME).hex
