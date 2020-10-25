@@ -32,4 +32,4 @@ showhex:
           
 .PHONY: clean
 clean:
-	rm $(PROGNAME).hex
+	rm *.hex
