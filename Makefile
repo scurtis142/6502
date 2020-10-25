@@ -16,7 +16,7 @@
  
 ROM = AT28C64B
 ASSEMBLER = vasm6502_oldstyle
-PROGNAME = hello
+PROGNAME = lcd
 OPTIONS = -Fbin -dotdir
  
 $(PROGNAME).hex: $(PROGNAME).s
